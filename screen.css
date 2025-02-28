@@ -1,0 +1,333 @@
+
+/* ====== الشاشات الصغيرة (الهاتف) ====== */
+@media (max-width: 480px) {
+    .contact-container {
+        max-width: 350px; /* تصغير الحاوية أكثر */
+        padding: 0 10px; /* تقليل المسافة الجانبية */
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr); /* ثابت 3 عناصر في كل صف */
+        gap: 10px; /* تقليل المسافة بين العناصر */
+    }
+
+    .contact-item {
+        width: 100px; /* تصغير عرض العنصر */
+        height: 90px; /* تصغير ارتفاع العنصر */
+        padding: 8px; /* تقليل الحشو الداخلي */
+    }
+
+    .contact-item i {
+        font-size: 1.2rem; /* تصغير حجم الأيقونة */
+    }
+
+    .contact-item a {
+        font-size: 0.6rem; /* تصغير حجم النص */
+        white-space: nowrap; /* التأكد من بقاء النص في سطر واحد */
+        overflow: hidden; /* منع النص من الخروج من الحاوية */
+        max-width: 90%; /* تحديد عرض النص */
+        font-family: 'Arial', sans-serif; /* تغيير الخط */
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 0.4rem;
+    }
+    .nav-links a {
+        font-size: 16px;
+        padding: 9px;
+        line-height: 2; /* لضبط ارتفاع الزر */
+    }
+    .btn {
+        font-size: 16px;
+        padding: 9px;
+        line-height: 1; /* لضبط ارتفاع الزر */
+    }
+
+    .skills-section .container {
+        grid-template-columns: repeat(3, 100px); /* 3 أعمدة بحجم ثابت */
+        justify-content: center; /* توسيط الشبكة */
+        max-width: 100%;
+        padding: 0 20px; /* مسافة على الجانبين */
+        gap: 10px;
+    }
+
+    .skills-intro {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* يبقى عمودين في الصف */
+        gap: 0.5rem; /* تقليل المسافة بين العناصر أكثر */
+        padding: 0 8px; /* تقليل المساحة على الجانبين أكثر */
+    }
+
+    .service-card {
+        padding: 10px; /* تقليل الحشو داخل البطاقات أكثر */
+    }
+
+    .service-card i {
+        font-size: 1.3rem; /* تصغير حجم الأيقونات أكثر */
+    }
+
+    .services-section h1 {
+        font-size: 1.4rem; /* تصغير حجم العنوان الرئيسي أكثر */
+    }
+    
+    .service-card h2 {
+        font-size: 0.7rem; /* تصغير حجم عناوين الخدمات أكثر */
+    }
+
+    .service-card p {
+        font-size: 0.7rem; /* تصغير حجم النصوص أكثر */
+    }
+    
+    .ramadan-welcome-card {
+        max-width: 100%; /* توسيع الرسالة الترحيبية */
+    }
+
+    .welcome-content h1 {
+        font-size: 1.8rem; /* زيادة حجم النص الترحيبي */
+    }
+
+    .welcome-content p {
+        font-size: 1.4rem; 
+        padding :10px;
+    }
+
+    .ramadan-content {
+        padding: 5px;
+    }
+
+    
+    .chat-container {
+        max-width: 100%; /* توسيع الحاوية لتملأ الشاشة */
+        border-radius: 20px; /* إزالة التدوير للحواف */
+        max-height: 75vh; /* تقليل الارتفاع */
+        margin: 10px; /* إضافة مسافة حول الحاوية */
+    }
+
+    #bot-name {
+        font-size: 1.2rem; /* تقليل حجم النص */
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+    .chat-box {
+        height: 60vh; /* تقليل ارتفاع صندوق المحادثة */
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+    .message {
+        padding: 8px 12px; /* تقليل المسافات الداخلية للرسائل */
+        font-size: 0.9rem; /* تقليل حجم الخط */
+    }
+
+    .chat-input {
+        width: calc(100% - 80px); /* توسيع حقل الإدخال */
+        padding: 10px; /* تقليل المسافات الداخلية */
+        font-size: 0.9rem; /* تقليل حجم الخط */
+    }
+
+    .send-btn {
+        width: 60px; /* تقليل حجم زر الإرسال */
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+    /* قسم الأفكار العشوائية (Random Ideas) */
+    .random {
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+    .random button {
+        font-size: 1rem; /* تقليل حجم الخط */
+        padding: 10px 20px; /* تقليل المسافات الداخلية */
+    }
+
+    .idea-container {
+        font-size: 1.4rem; /* تقليل حجم الخط */
+        padding: 15px; /* تقليل المسافات الداخلية */
+        max-width: 90%; /* توسيع الحاوية */
+    }
+
+    .random h2 {
+        font-size: 1.7rem; /* تقليل حجم العنوان */
+        margin-bottom: 15px; /* تقليل المسافة السفلية */
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    /* تحسين حجم البطاقة */
+    .project-card {
+        margin-bottom: 0.5rem;
+        border-radius: 8px;
+    }
+
+    /* تحسينات الكاروسيل */
+    .carousel-container {
+        min-height: 200px; /* تقليل الارتفاع */
+    }
+
+    .nav-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    /* تحسين النصوص */
+    .project-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+        font-size: 0.7rem;
+        line-height: 1.5;
+        padding: 0.5rem 0.7rem;
+        
+    }
+
+    /* تحسين الأزرار */
+    .project-link {
+        width: 70%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        margin-top:0.2rem;
+    }
+
+    /* سكرول المشاريع الجانبي */
+    .projects-scroll {
+        padding: 10px 5px;
+        gap: 8px;
+        margin: 0;
+    }
+
+    .project-item {
+        flex: 0 0 80px;
+        height: 90px;
+        padding: 5px;
+    }
+
+    .project-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-item span {
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
+    /* عرض المشروع الرئيسي */
+    .project-display {
+        margin: 0 40px;
+        border-radius: 12px;
+        
+    }
+
+    .project-images {
+        height: 180px;
+    }
+
+    .project-content h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .project-content p {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    /* تحسين الظلال والحركات */
+    .project-card:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(0, 255, 0, 0.15);
+    }
+
+    .nav-arrow:hover {
+        transform: translateY(-50%) scale(1);
+        background: rgba(0, 255, 255, 0.1);
+    }
+
+    /* تحسين الهوامش */
+    .project-content {
+        padding: 1rem;
+    }
+      .project-buttons {
+        display: flex;  /* جعل الأزرار بجانب بعض */
+        justify-content: center; /* توسيط الأزرار */
+        gap: 5px; /* مسافة بين الأزرار */
+        flex-wrap: wrap; /* السماح بلف الأزرار إذا لم يكن هناك مساحة */
+        width: 95%;
+    }
+
+    .project-buttons a, 
+    .project-buttons button {
+        flex: 1; /* جعل الأزرار تأخذ نفس الحجم */
+        padding: 10px 1px;
+        font-size: 12px;
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    
+    .message {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+    
+    .chat-input {
+        font-size: 13px;
+        padding: 10 20px;
+        width:97%;
+    }
+    
+    .send-btn {
+        width: 25%;
+        padding: 10px 20px;
+    }
+    
+    #voice-btn {
+        left: 25px;
+        font-size: 0.9em;
+    }
+
+
+
+   
+    .chat-container {
+        max-width: 100%; /* توسيع الحاوية لتملأ الشاشة */
+        border-radius: 20px; /* إزالة التدوير للحواف */
+        max-height: 75vh; /* تقليل الارتفاع */
+        margin: 10px; /* إضافة مسافة حول الحاوية */
+    }
+
+    #bot-name {
+        font-size: 1.6rem; /* تقليل حجم النص */
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+    .chat-box {
+        height: 60vh; /* تقليل ارتفاع صندوق المحادثة */
+        padding: 10px; /* تقليل المسافات الداخلية */
+    }
+
+
+}
+
+

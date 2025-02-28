@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد إسبريسو | مطور ويب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="lemon-theme.css" id="lemon-theme" disabled>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="screen.css">
+
+    <style>
+
+      
+        #space {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <canvas id="space"></canvas>
+
+    <header>
+        <nav>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                    <li><a href="services.html" data-i18n="services">الخدمات</a></li>
+                    <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                    <li><a href="contact.html" data-i18n="contact">تواصل معي</a></li>
+
+                    <div class="controls">
+                        <button id="language-toggle" class="btn">EN</button>
+                        <button id="theme-toggle" class="btn">🌙</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="about">
+    <section class="animated-section" id="about" class="about-section">
+        <div class="content-wrapper" class="container">
+             <h1 data-i18n="hi">تعرف عليّ أكثر </h1>
+                <p class="skills-intro" data-i18n="skills_intro">
+                 أنا أحمد أسبريسو مطور ويب وتطبيقات أندرويد حاصل على بكالوريوس نظم المعلومات وأعمل بشغف على تحويل الأفكار إلى مواقع وتطبيقات تفاعلية تلبي احتياجات العملاء باحترافية أقوم ببناء مواقع ويب متكاملة وسهلة الاستخدام كما يمكنني تحويل هذه المواقع إلى تطبيقات أندرويد مما يوفر تجربة متكاملة عبر المنصات لدي خبرة في تنفيذ مشاريع متنوعة مثل مواقع وتطبيقات لصيدليات مطاعم سوبرماركت متجر إلكتروني ملابس معرض رقمي وغيرها من المشاريع التي يمكنك استعراضها في قسم المشاريع أنا هنا لمساعدتك في إنشاء موقع أو تطبيق يعكس هوية عملك بشكل احترافي مع الالتزام بأعلى معايير الجودة وسرعة التسليم لنحول فكرتك إلى واقع رقمي
+            </p>
+           
+        </div>
+    </section>
+    
+    
+    <section class="animated-section" id="journey" class="journey-section">
+        <div class="content-wrapper">
+            <h1 data-i18n="Developer">رحلتي كمطور</h1>
+              <canvas id="journeyCanvas"></canvas>
+         
+        </div>
+    </section>
+</main>
+
+
+
+    
+
+    
+
+    
+    <script>
+        function resizeCanvas() { const canvas = document.getElementById("journeyCanvas"); canvas.width = window.innerWidth - 20; canvas.height = 400; drawJourney(); }
+
+function drawJourney() { const canvas = document.getElementById("journeyCanvas"); const ctx = canvas.getContext("2d"); ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+const points = [
+    { year: "2018", text: "HTML & CSS" },
+    { year: "2019", text: "JavaScript" },
+    { year: "2020", text: "bootstrap & tailwind" },
+    { year: "2022", text: "React & Node.js" },
+    { year: "2024", text: "php & sql" },
+    { year: "2025", text: "full-project" }
+];
+
+const spacing = (canvas.width - 100) / (points.length - 1);
+points.forEach((point, index) => {
+    point.x = 50 + index * spacing;
+    point.y = 350 - index * 50;
+});
+
+let progress = 0;
+function animateLine() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, " #ffd700");
+    gradient.addColorStop(1, "black");
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+
+    for (let i = 1; i < points.length; i++) {
+        let cpX = (points[i - 1].x + points[i].x) / 2;
+        let cpY = (points[i - 1].y + points[i].y) / 2;
+        ctx.quadraticCurveTo(points[i - 1].x, points[i - 1].y, cpX, cpY);
+        ctx.quadraticCurveTo(cpX, cpY, points[i].x, points[i].y * progress);
+    }
+    ctx.stroke();
+
+    ctx.fillStyle = "#ffd700";
+    ctx.font = "14px Arial";
+    points.forEach(point => {
+        ctx.beginPath();
+        ctx.arc(point.x, point.y * progress, 8, 0, Math.PI * 2);
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = " #ffd700";
+        ctx.fillStyle = "#ffd700";
+        ctx.fill();
+        ctx.fillStyle = "#ffd700";
+        ctx.shadowBlur = 0;
+        ctx.fillText(point.year, point.x - 15, 390);
+        ctx.fillText(point.text, point.x + 10, point.y * progress);
+    });
+
+    if (progress < 1) {
+        progress += 0.02;
+        requestAnimationFrame(animateLine);
+    }
+}
+animateLine();
+
+}
+
+window.addEventListener("resize", resizeCanvas); window.addEventListener("load", resizeCanvas);
+
+
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

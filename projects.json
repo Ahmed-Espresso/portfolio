@@ -1,0 +1,124 @@
+{
+    "projects": [
+        {
+            "id": "project1",
+            "name": {
+                "en": "Restaurant",
+                "ar": "مطعم"
+            },
+            "description": {
+                "en": "A digital restaurant featuring innovative recipes with easy WhatsApp ordering",
+                "ar": "مطعم رقمي متكامل يعرض وصفات مبتكرة مع طلبات سهلة عبر واتساب"
+            },
+            "thumb": "2.png",
+            "images": [
+                "m1.jpg",
+            "m2.jpg",
+            "m3.jpg",
+            "m4.jpg",
+            "m5.jpg",
+            "m6.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/restaurant/",
+            "color": "#ffd700"
+        },
+        {
+            "id": "project2",
+            "name": {
+                "en": "Pharmacy",
+                "ar": "صيدلية"
+            },
+            "description": {
+                "en": "A smart pharmacy offering medications, products, health information, awareness, medical consultation, and WhatsApp ordering",
+                "ar": "صيدلية ذكية تجمع بين الادويه ومنتجات العناية واستشارات طبية فورية مع طلبات سهلة عبر واتساب"
+            },
+            "thumb": "1.png",
+            "images": [
+                "s1.jpg",
+            "s2.jpg",
+            "s3.jpg",
+            "s4.jpg",
+            "s5.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/pharmacy/",
+            "color": "green"
+        },
+        {
+            "id": "project3",
+            "name": {
+                "en": "Store",
+                "ar": "متجر "
+            },
+            "description": {
+                "en": "e-commerce store offering a seamless shopping experience and exclusive deals",
+                "ar": "متجر إلكتروني متكامل يوفر تجربة تسوق سلسة وعروض حصرية"
+            },
+            "thumb": "3.png",
+            "images": [
+                 "st1.jpg",
+            "st2.jpg",
+            "st3.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/store/",
+            "color": "#880e4f"
+        },
+        {
+            "id": "project4",
+            "name": {
+                "en": "Market",
+                "ar": " ماركت"
+            },
+            "description": {
+                "en": "A website for a supermarket displaying grocery products with online ordering options",
+                "ar": "سوبرماركت رقمي منظم يقدم أقساماً مخصصة وبحثاً ذكياً لطلبات سلسة وامكانيه الطلب اونلاين"
+            },
+            "thumb": "5.png",
+            "images": [
+               
+              "mr1.jpg",
+            "mr2.jpg",
+            "mr3.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/market/",
+            "color": "#00ff9d"
+        },
+        {
+            "id": "project5",
+            "name": {
+                "en": "gallery",
+                "ar": "معرض "
+            },
+            "description": {
+                "en": "digital gallery with interactive honeycomb cells revealing work sections",
+                "ar": "معرض رقمي مبتكر بخلايا نحل تفاعلية تكشف أقسام الأعمال"
+            },
+            "thumb": "4.png",
+            "images": [
+                  "g1.jpg",
+            "g2.jpg",
+            "g3.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/gallery/",
+            "color": "#ECFFFFFF"
+        },
+         {
+            "id": "project4",
+            "name": {
+                "en": "Market",
+                "ar": " ماركت"
+            },
+            "description": {
+                "en": "A website for a supermarket displaying grocery products with online ordering options",
+                "ar": "سوبرماركت رقمي منظم يقدم أقساماً مخصصة وبحثاً ذكياً لطلبات سلسة وامكانيه الطلب اونلاين"
+            },
+            "thumb": "6.png",
+            "images": [
+                  "sm1.jpg",
+            "sm2.jpg",
+            "sm3.jpg"
+            ],
+            "url": "https://ahmed-espresso.github.io/marketb/",
+            "color": "#0056b3"
+        }
+    ]
+}

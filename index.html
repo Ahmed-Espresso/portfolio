@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد إسبريسو | مطور ويب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="screen.css">
+     <link rel="stylesheet" href="lemon-theme.css" id="lemon-theme" disabled>
+
+</head>
+<body>
+
+    <canvas id="space"></canvas>
+    
+    <header>
+        <nav>
+            <div >
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                    <li><a href="services.html" data-i18n="services">الخدمات</a></li>
+                    <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                    <li><a href="contact.html" data-i18n="contact">تواصل معي</a></li>
+
+                    <div class="controls">
+                        <button id="language-toggle" class="btn">en</button>
+                        <button id="theme-toggle" class="btn">🌙</button>  
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- قسم الجملة الترحيبية والوصف -->
+    
+
+<section class="welcome-section" id="home">
+    <div class="container">
+        <!-- الكارت المدمج -->
+        <div class="ramadan-welcome-card">
+            <!-- محتوى الترحيب -->
+            <div class="welcome-content">
+               
+                <p class="typewriter-second" data-i18n="description"></p>
+            </div>
+            
+            <!-- محتوى عرض رمضان -->
+            <div class="ramadan-content"">
+                <i class="fas fa-moon"></i>
+                <h3 data-i18n="ramadan"></h3>
+
+                  <p data-i18n="ard">عروض خاصة</p>
+
+
+
+                <span class="discount" data-i18n="dis"></span><br>
+                </p>
+
+                <div class="offer-ends" data-i18n="end">   </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+       
+   <div>
+    <h1  class="gradient-text" data-i18n="nzra">نظره سريعه</h1>
+    <div id="scrl">
+        <div id="projects-scroll" class="projects-scroll"></div>
+        <div id="project-display" class="project-display"></div>
+    </div>
+</div>
+
+
+<section id="bot">
+   <h1 data-i18n="msad">المساعد</h1>
+    <div class="chat-container">
+        <span id="bot-name" data-i18n="bot_name">نيرو</span>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-footer">
+            <div class="input-container">
+                <input  type="text" id="userInput" class="chat-input"  placeholder="اكتب رسالة...">
+                <button id="voice-btn"><i class="fas fa-microphone"></i></button>
+            </div>
+            <button onclick="sendMessage()" class="send-btn" data-i18n="sendbtn"></button>
+        </div>
+    </div>
+</section>
+
+
+
+    <section>
+        <div class="random">
+            <h2 data-i18n="idea"> </h2>
+            <button onclick="generateIdea()" data-i18n="getidea">  </button>
+            <div class="idea-container" id="ideaContainer"></div>
+        </div>
+    </section>  
+    
+
+ <section id="skills" class="skills-section">
+    <h1 data-i18n="skills">المهارات</h1>
+        <div class="container">
+        
+            
+            <div class="skill" data-skill="javascript">
+                <i class="fab fa-js"></i>
+                <span class="skill-name" data-i18n="javascript">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%; background-color: #f0db4f;">
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill" data-skill="html">
+                        <i class="fab fa-html5"></i>
+                <span class="skill-name" data-i18n="html">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%; background-color: #e34c26;">
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill" data-skill="css">
+   <i class="fab fa-css3-alt"></i>
+                <span class="skill-name" data-i18n="css">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%; background-color: #264de4;">
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill" data-skill="react">
+   <i class="fab fa-react"></i>
+                <span class="skill-name" data-i18n="react">React</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%; background-color: #61dbfb;">
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill" data-skill="nodejs">
+   <i class="fab fa-node-js"></i>
+                <span class="skill-name" data-i18n="nodejs">Node.js</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%; background-color: #68a063;">
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+<div class="skill" data-skill="php">
+   <i class="fab fa-php"></i>
+    <span class="skill-name" data-i18n="php">PHP</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 60%; background-color: #777BB3;">
+            <span class="skill-percent">60%</span>
+        </div>
+    </div>
+</div>
+
+<div class="skill" data-skill="linux">
+   <i class="fab fa-linux"></i>
+    <span class="skill-name" data-i18n="linux">Linux</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 80%; background-color: #FCC624;">
+            <span class="skill-percent">80%</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="skill" data-skill="github">
+   <i class="fab fa-github"></i>
+    <span class="skill-name" data-i18n="github">GitHub</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 76%; background-color: #6e5494;">
+            <span class="skill-percent">76%</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="skill" data-skill="sql">
+      <i class="fas fa-database"></i>
+    <span class="skill-name" data-i18n="sql">SQL</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 74%; background-color: #00758F;">
+            <span class="skill-percent">74%</span>
+        </div>
+    </div>
+</div>
+
+<div class="skill" data-skill="bootstrap">
+    <i class="fab fa-bootstrap"></i>
+    <span class="skill-name" data-i18n="bootstrap">Bootstrap</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 85%; background-color: #563D7C;">
+            <span class="skill-percent">85%</span>
+        </div>
+    </div>
+</div>
+<div class="skill" data-skill="tailwind">
+    <i class="fas fa-wind"></i>
+    <span class="skill-name" data-i18n="tailwind">Tailwind CSS</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 80%; background-color: #38B2AC;">
+            <span class="skill-percent">80%</span>
+        </div>
+    </div>
+</div>
+<div class="skill" data-skill="cordova">
+    <i class="fas fa-mobile-alt"></i>
+    <span class="skill-name" data-i18n="cordova">Cordova</span>
+    <div class="skill-bar">
+        <div class="skill-level" style="width: 70%; background-color: #E6710A;">
+            <span class="skill-percent">70%</span>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+
+<section class="quick-contact" id="contact">
+    <div class="container">
+        <h1 data-i18n="quick-contact">تواصل معي</h1>
+        <form id="quick-contact-form">
+            <!-- حقل الاسم -->
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="اسمك" required>
+            
+            </div>
+
+            <!-- حقل البريد الإلكتروني -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+                
+            </div>
+
+            <!-- حقل الرسالة -->
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="رسالتك"required ></textarea>
+          
+            <div class="quick-btn">
+  <!-- زر واتساب -->
+  <button data-i18n="btnw" type="submit" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+    <span ></span>
+  </button>
+
+  <!-- زر جيميل -->
+  <button data-i18n="btne" type="button" class="gmail-btn" id="send-email">
+    <i class="fab fa-google"></i>
+    <span ></span>
+  </button>
+</div>
+        </form>
+    </div>
+</section>
+
+
+<section class="statistics" id="stats">
+    <div class="container">
+        <h1 data-i18n="statistics">الإحصائيات</h1>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 data-i18n="projects-completed">مشروع مكتمل</h3>
+                <p data-i18n="projects-count">50+</p>
+            </div>
+            <div class="stat-card">
+                <h3 data-i18n="happy-clients">عميل سعيد</h3>
+                <p data-i18n="clients-count">30+</p>
+            </div>
+            <div class="stat-card">
+                <h3 data-i18n="years-experience">سنوات الخبرة</h3>
+                <p data-i18n="experience-count">5+</p>
+            </div>
+            <!-- يمكنك إضافة المزيد من الإحصائيات هنا -->
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projectsScroll = document.getElementById('projects-scroll');
+    const projectDisplay = document.getElementById('project-display');
+    const languageToggle = document.getElementById('language-toggle');
+
+    let currentLanguage = localStorage.getItem('lang') || 'en';
+    
+    function loadProjects() {
+        projectsScroll.innerHTML = '';
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(data => {
+                data.projects.forEach(project => {
+                    const projectItem = document.createElement('div');
+                    projectItem.className = 'project-item';
+                    projectItem.innerHTML = `
+                        <img src="${project.thumb}" alt="${project.name[currentLanguage]}" draggable="false">
+                        <span style="color: ${project.color};">${project.name[currentLanguage]}</span>
+                    `;
+                    
+                    projectItem.addEventListener('click', () => {
+                        showProject(project);
+                    });
+
+                    projectsScroll.appendChild(projectItem);
+                });
+            });
+    }
+
+    function showProject(project) {
+        projectDisplay.innerHTML = `
+            <div class="project-images">
+                ${project.images.map(img => `
+                    <div class="project-image">
+                        <img src="${img}" alt="${project.name[currentLanguage]}">
+                    </div>
+                `).join('')}
+            </div>
+            <div class="project-content">
+                <h2 style="color: ${project.color};">${project.name[currentLanguage]}</h2>
+                <p style="color: ${project.color};">${project.description[currentLanguage]}</p>
+                <div class="project-buttons">
+                    <a href="${project.url}" target="_blank" 
+   style="background-color: ${project.color}; color: inherit;">
+    ${currentLanguage === 'en' ? 'Visit Website' : 'زيارة الموقع'}
+</a>
+                    <button id="show-more" style="background-color: ${project.color};">
+                        ${currentLanguage === 'en' ? 'More Projects' : 'المزيد من المشاريع'}
+                    </button>
+                </div>
+            </div>
+        `;
+
+        startSlideshow();
+
+        document.getElementById('show-more').addEventListener('click', () => {
+            window.location.href = 'projects.html';
+        });
+    }
+
+    function startSlideshow() {
+        const images = document.querySelectorAll('.project-image');
+        let currentImage = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        if (images.length > 0) {
+            images.forEach((image, index) => {
+                image.style.display = index === 0 ? 'block' : 'none';
+            });
+
+            function showImage(index) {
+                images.forEach(image => image.style.display = 'none');
+                images[index].style.display = 'block';
+            }
+
+            function nextImage() {
+                currentImage = (currentImage + 1) % images.length;
+                showImage(currentImage);
+            }
+
+            function prevImage() {
+                currentImage = (currentImage - 1 + images.length) % images.length;
+                showImage(currentImage);
+            }
+
+            let imageInterval = setInterval(nextImage, 4000);
+
+            document.querySelector('.project-images').addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+            });
+
+            document.querySelector('.project-images').addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].clientX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                if (touchStartX - touchEndX > swipeThreshold) {
+                    nextImage();
+                } else if (touchEndX - touchStartX > swipeThreshold) {
+                    prevImage();
+                }
+            }
+        }
+    }
+
+    languageToggle.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+        localStorage.setItem('lang', currentLanguage);
+        loadProjects();
+        
+        // إضافة هذه السطور لمزامنة حالة الزر مع باقي الموقع
+        const currentText = languageToggle.textContent;
+        languageToggle.textContent = currentText === 'en' ? 'ar' : 'en'; 
+    });
+
+    loadProjects();
+});
+
+</script>
+
+<script>
+    // المتغيرات العامة
+    let fuse = null;
+let cachedResponses = null;
+
+// تهيئة Fuse.js
+function initializeFuse(data) {
+    const options = {
+        keys: ['messages'],
+        includeScore: true,
+        threshold: 0.4, 
+        minMatchCharLength: 2,
+        ignoreLocation: true,
+        shouldSort: true,
+        findAllMatches: true,
+        ignoreFieldNorm: true
+    };
+    fuse = new Fuse(data, options);
+}
+
+// تحميل الردود
+async function fetchResponses() {
+    try {
+        if (!cachedResponses) {
+            const response = await fetch('responses.json');
+            if (!response.ok) throw new Error('Failed to load responses');
+            cachedResponses = await response.json();
+            initializeFuse(cachedResponses);
+        }
+        return cachedResponses;
+    } catch (error) {
+        console.error('Error loading responses:', error);
+        return {};
+    }
+}
+
+// الكشف عن اللغة
+function detectLanguage(text) {
+    const englishRegex = /[a-zA-Z]/;
+    return englishRegex.test(text) ? 'en' : 'ar';
+}
+
+// توحيد المدخلات
+function normalizeInput(input) {
+    return input
+        .trim()
+        .toLowerCase()
+        .replace(/[\u064B-\u065F\u0610-\u061A]/g, '')
+        .replace(/[إأآ]/g, 'ا')
+        .replace(/[ى]/g, 'ي')
+        .replace(/[ة]/g, 'ه')
+        .replace(/[^ء-يa-zA-Z\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+// البحث عن أفضل تطابق
+function findBestMatch(input, currentLang) {
+    const normalizedInput = normalizeInput(input);
+    
+    if (!fuse) return null;
+    
+    const results = fuse.search(normalizedInput);
+    
+    if (results.length > 0 && results[0].score < 0.5) {
+        const response = results[0].item.response;
+        if (typeof response === 'object') {
+            return response[currentLang] || response['en'] || response['ar'];
+        }
+        return response;
+    }
+    return null;
+}
+
+// تشغيل الصوت (TTS) - جعل البوت يتحدث
+function speak(text, lang = 'ar-SA') {
+    let speech = new SpeechSynthesisUtterance(text);
+    speech.lang = lang;
+    speech.rate = 1;
+    speech.pitch = 1;
+    speech.volume = 1;
+    window.speechSynthesis.speak(speech);
+}
+
+// الاستماع إلى الصوت (STT) - جعل البوت يسمع
+function startListening() {
+    let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'ar-SA';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onresult = function(event) {
+        let userSpeech = event.results[0][0].transcript;
+        console.log("سمعت:", userSpeech);
+        // وضع الكلام الصوتي في حقل الإدخال
+        document.getElementById('userInput').value = userSpeech;
+        // إرسال الرسالة مع تحديد أنها صوتية
+        sendMessage(true);
+    };
+
+    recognition.onerror = function(event) {
+        console.error("حدث خطأ في التعرف على الصوت:", event.error);
+    };
+
+    recognition.start();
+}
+
+// إرسال الرسالة مع معلمة تحدد نوع الإدخال: نصي (false) أو صوتي (true)
+async function sendMessage(isVoice = false) {
+    try {
+        const userInput = document.getElementById('userInput').value;
+        if (!userInput.trim()) return;
+
+        // الكشف عن لغة الرسالة
+        const messageLang = detectLanguage(userInput);
+        // الحصول على لغة الموقع
+        const siteLang = localStorage.getItem('lang') || 'ar';
+        // تحديد اللغة النهائية
+        const currentLang = messageLang === 'en' ? 'en' : siteLang;
+
+        const chatBox = document.getElementById('chatBox');
+        // عرض رسالة المستخدم في الدردشة دائمًا
+        chatBox.innerHTML += `<div class="message user">${userInput}</div>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+        // تنظيف حقل الإدخال
+        document.getElementById('userInput').value = '';
+
+        // البحث عن الرد المناسب
+        await fetchResponses();
+        const bestMatch = findBestMatch(userInput, currentLang);
+        const botResponse = bestMatch ? bestMatch : 
+            (currentLang === 'ar' ? 
+                "لا أفهم السؤال، جرب إحدى هذه الأسئلة:<br>• ما هي مهاراتك؟<br>• كيف أبدأ في البرمجة؟" :
+                "I didn't understand, try these:<br>• What are your skills?<br>• How to start programming?");
+
+        // إضافة رد البوت إلى الدردشة
+        setTimeout(() => {
+            chatBox.innerHTML += `<div class="message bot">${botResponse}</div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+            // إذا كانت الرسالة صوتية، يتم تشغيل الرد صوتيًا أيضًا
+            if (isVoice) {
+                speak(botResponse, currentLang === 'ar' ? 'ar-SA' : 'en-US');
+            }
+        }, 500);
+
+    } catch (error) {
+        console.error('Error:', error);
+        const currentLang = localStorage.getItem('lang') || 'ar';
+        const errorMessage = currentLang === 'ar' ? 
+            "⚠️ حدث خطأ في النظام" : 
+            "⚠️ System error occurred";
+        document.getElementById('chatBox').innerHTML += 
+            `<div class="message bot error">${errorMessage}</div>`;
+    }
+}
+
+// تفعيل الإدخال النصي عند الضغط على Enter (رسالة نصية فقط)
+document.getElementById('userInput').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendMessage(false);
+});
+
+// تفعيل زر الاستماع (الرسالة الصوتية)
+document.getElementById('voice-btn').addEventListener('click', startListening);
+
+// التهيئة الأولية
+window.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await fetchResponses();
+        console.log('النظام جاهز للعمل');
+    } catch (error) {
+        console.error('خطأ في التهيئة:', error);
+    }
+});
+</script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+    
+   
+
+<script>
+async function generateIdea() {
+    try {
+        // احصل على اللغة من التخزين المحلي
+        const currentLang = localStorage.getItem('lang') || 'ar';
+        
+        const response = await fetch('ideas.json');
+        const data = await response.json();
+        const ideas = data[currentLang] || [];
+        
+        if(ideas.length > 0) {
+            const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+            document.getElementById("ideaContainer").innerText = `✨ ${randomIdea}`;
+        } else {
+            document.getElementById("ideaContainer").innerText = 
+                currentLang === 'ar' ? "❌ لا توجد أفكار متاحة" : "❌ No ideas available";
+        }
+    } catch (error) {
+        const errorMsg = currentLang === 'ar' ? 
+            "❌ حدث خطأ في تحميل الأفكار" : 
+            "❌ Error loading ideas";
+        document.getElementById("ideaContainer").innerText = errorMsg;
+    }
+}
+</script>
+<script>
+document.querySelector(".whatsapp-btn").innerHTML = '<i class="fab fa-whatsapp"></i> إرسال رسالة';
+document.querySelector(".gmail-btn").innerHTML = '<i class="fab fa-google"></i> إرسال إيميل';
+</script>
+
+</body>
+</html>
