@@ -1,0 +1,90 @@
+
+{
+    "logo": "Ahmed Espresso",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "about",
+    "services":"services",
+    "welcome": "Hi! I'm Ahmed Espresso",
+    "bio": "Full-stack developer specializing in web and mobile solutions",
+    "contact_title": "Contact Me",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Message",
+    "send": "Send",
+    "copyright": "© 2023 All Rights Reserved",
+    "projects_title": "projects",
+    "skills": "skills",
+    "skills_intro": "I am Ahmed Espresso, Web & Android developer. I have a Bachelor's degree in Information Systems,I have worked on many projects including websites and apps for pharmacies, supermarkets, online stores, and more,which you can explore in the projects section,I am here to help you create a site or application,to bring your idea to life",
+    "html": "HTML",
+    "css": "CSS",
+    "react": "React",
+    "nodejs": "Node.js",
+    "visit_website": "Visit Website",
+    "contactMessage": "Do you have a great idea or need help in developing your site! Dont hesitate to communicate with me! I am here to help you achieve your digital goals",
+    "description" : "Hi! I'm Ahmed Espresso Web & Android developer  ",
+    "quick-contact": "quick-contact",
+    "statistics": "statistics",
+     "send-email": "send-email",
+     "send-message": "send-message",
+     "years-experience": "experience",
+     "happy-clients": "happy",
+     "projects-completed": "completed",
+     "projects-count": "+50",
+     "clients-count": "+30",
+     "experience-count": "+5",
+     "hi":"Hi",
+     "responsive_design":"responsive_design",
+     "frontend_development":"frontend_development",
+     "ui_ux_design":"ui_ux_design",
+     "maintenance_support":"maintenance_support",
+     "android_development":"android_development",
+     "prototyping":"prototyping",
+     "performance_optimization":"performance_optimization",
+     "web_development":"web_development",
+     "servc":" choose the service and let me bring your idea to life",
+     "web_development": "Web Development",
+     "web_development_desc": "Designing and developing responsive, high-performance websites using the latest frontend technologies.",
+    
+     "responsive_design": "Responsive Design",
+     "responsive_design_desc": "Creating designs that work seamlessly across all devices, from smartphones to desktops.",
+    
+     "ui_ux_design": "UI/UX Design",
+     "ui_ux_design_desc": "Designing attractive and user-friendly interfaces to enhance user experience.",
+    
+     "maintenance_support": "Maintenance & Support",
+     "maintenance_support_desc": "Providing maintenance and technical support services to ensure websites run smoothly.",
+    
+     "frontend_development": "Frontend Development",
+     "frontend_development_desc": "Developing dynamic frontend interfaces using HTML, CSS, JavaScript, React, ",
+    
+     "android_development": "Android Development",
+     "android_development_desc": "Designing and developing high-quality Android applications ",
+    
+     "prototyping": "Prototyping",
+     "prototyping_desc": "Creating interactive prototypes for web and mobile applications ",
+    
+    "performance_optimization": "Performance Optimization",
+    "performance_optimization_desc": "Enhancing website and application performance to ensure fast loading speeds and a seamless user experience.",
+"Developer":"DevJourney",
+ "bot_name":"Nero 🥷",
+ "ramadan":"Ramadan kareem 🌜",
+ "idea":" Ideas 💡",
+  "getidea":"Get an idea ⭐",
+  "ard":"Offers ",
+    "dis":"50% off",
+    "end":" until the end of Ramadan",
+    "sendbtn":"send",
+    "btnw":"send message",
+   "btne":"send email",
+   "chatbot_desc":"Develop a smart chatbot that automatically responds to all website inquiries, enhancing user experience",
+   "nzra":" quick look ",
+    "msad":" Assistant "
+
+
+}
+
+
+
+
