@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Restaurant",
+        "description": "A digital restaurant featuring innovative recipes with easy WhatsApp ordering",
+        "images": [
+           "m1.jpg",
+            "m2.jpg",
+            "m3.jpg",
+            "m4.jpg",
+            "m5.jpg",
+            "m6.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/restaurant/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "Pharmacy",
+        "description": "A smart pharmacy offering medications, products, health information, awareness, medical consultation, and WhatsApp ordering",
+        "images": [
+             "s1.jpg",
+            "s2.jpg",
+            "s3.jpg",
+            "s4.jpg",
+            "s5.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/pharmacy/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "Store",
+        "description": "e-commerce store offering a seamless shopping experience and exclusive deals",
+        "images": [
+             "st1.jpg",
+            "st2.jpg",
+            "st3.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/store/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "Market",
+        "description": "A website for a supermarket displaying grocery products with online ordering options.",
+        "images": [
+             "mr1.jpg",
+            "mr2.jpg",
+            "mr3.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/market/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "gallery",
+        "description": "digital gallery with interactive honeycomb cells revealing work sections",
+        "images": [
+              "g1.jpg",
+            "g2.jpg",
+            "g3.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/gallery/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },{
+        "title": "Market",
+        "description": "A website for a supermarket displaying grocery products with online ordering options.",
+        "images": [
+             "sm1.jpg",
+            "sm2.jpg",
+            "sm3.jpg"
+        ],
+        "links": [
+            {
+                "text": "Visit Website",
+                "url": "https://ahmed-espresso.github.io/marketb/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    }
+]

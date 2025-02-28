@@ -1,0 +1,103 @@
+[
+    {
+        "title": "مطعم",
+        "description": "مطعم رقمي متكامل يعرض وصفات مبتكرة مع طلبات سهلة عبر واتساب",
+        "images": [
+            "m1.jpg",
+            "m2.jpg",
+            "m3.jpg",
+            "m4.jpg",
+            "m5.jpg",
+            "m6.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/restaurant/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "صيدلية",
+        "description": "صيدلية ذكية تجمع بين الادويه ومنتجات العناية واستشارات طبية فورية مع طلبات سهلة عبر واتساب",
+        "images": [
+             "s1.jpg",
+            "s2.jpg",
+            "s3.jpg",
+            "s4.jpg",
+            "s5.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/pharmacy/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "متجر إلكتروني",
+        "description": "متجر إلكتروني متكامل يوفر تجربة تسوق سلسة وعروض حصرية ",
+        "images": [
+              "st1.jpg",
+            "st2.jpg",
+            "st3.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/store/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "سوبر ماركت",
+        "description": "سوبرماركت رقمي منظم يقدم أقساماً مخصصة وبحثاً ذكياً لطلبات سلسة وامكانيه الطلب اونلاين",
+        "images": [
+             "mr1.jpg",
+            "mr2.jpg",
+            "mr3.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/market/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "title": "المعرض الرقمي",
+        "description": "معرض رقمي مبتكر بخلايا نحل تفاعلية تكشف أقسام الأعمال",
+        "images": [
+             "g1.jpg",
+            "g2.jpg",
+            "g3.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/gallery/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+     {
+        "title": "سوبر ماركت",
+        "description": "سوبرماركت رقمي منظم يقدم أقساماً مخصصة وبحثاً ذكياً لطلبات سلسة وامكانيه الطلب اونلاين",
+        "images": [
+             "sm1.jpg",
+            "sm2.jpg",
+            "sm3.jpg"
+        ],
+        "links": [
+            {
+                "text": "زيارة الموقع",
+                "url": "https://ahmed-espresso.github.io/marketb/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    }
+]
